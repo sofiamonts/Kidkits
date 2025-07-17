@@ -1,0 +1,545 @@
+/* 1. VARIABLES DE DISEÑO */
+:root {
+  --primary-color: #E3562B;
+  --secondary-color: #000000;
+  --light-color: #f8f9fa;
+  --dark-color: #000000;
+  --font-family-base: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* 2. ESTILOS GENERALES */
+body {
+  font-family: var(--font-family-base);
+  color: #212529;
+  background-color: #FFB300;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.texto-hero {
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.plan-img {
+  max-width: 140px; /* */
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.espaciado-izquierdo {
+  padding-left: 6vw;
+}
+
+
+
+/* 3. NAVBAR */
+.navbar {
+  background-color: transparent
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  background-color: transparent;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.30);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: var(--dark-color);
+}
+
+.nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* 4. HERO */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-image:
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff; /* Si el fondo es oscuro */
+}
+
+.hero-section h1,
+.hero-section p {
+  color: #fff; /* Asegura que el texto sea visible sobre el fondo */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+/* seccion beneficios cards */
+.benefit-card {
+  width: 100%;
+  max-width: 405px;
+  height: 408px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  box-shadow: none; /* sombra desactivada */
+}
+
+.benefit-text {
+  background-color: rgba(0, 0, 0, 0.0); /* transparente */
+  color: white;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* Estilo del título */
+.benefit-title {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Estilo del texto descriptivo */
+.benefit-desc {
+  font-size: 20px;
+  font-weight: 600; /* semibold */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .benefit-card {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+  }
+
+  .benefit-title {
+    font-size: 30px;
+  }
+
+  .benefit-desc {
+    font-size: 18px;
+  }
+}
+
+/* Sección de experiencia */
+.experiencia-seccion {
+  ;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1a1a1a;
+}
+
+.titulo-kit {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.descripcion-kit {
+  font-size: 1rem;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.kit-icon {
+  width: 60px; /* ajustá según lo que veas mejor */
+  height: auto;
+}
+
+
+/* Botones */
+.btn {
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark {
+  background-color:#CE6EC8;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #000000;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* 5. SECCIONES */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+
+  margin: 20px auto 0;
+}
+
+/* 6. CARDS */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.masonry__container {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.masonry__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+.bg-naranja {
+  background-color: #E64A19; /* naranja fuerte */
+}
+
+.icono {
+  width: 80px;
+  height: auto;
+}
+
+.seccion-pasos .col-md-3 {
+  max-width: 340px;
+  margin: 0 auto; /* Centra cada bloque */
+  padding: 1rem;   /* Espacio interno */
+} 
+
+.semi-bold-italic {
+  font-style: italic;
+  font-weight: 600;
+}
+.seccion-pasos h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.seccion-pasos p {
+  font-size: 0.95rem;
+}
+
+
+
+/* 7. TESTIMONIOS */
+.blockquote {
+  background-color: var(--light-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* 8. FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+form button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* 9. FOOTER */
+footer {
+  background-color: var(--dark-color);
+  color: 
+  font-size: 0.9rem;
+}
+
+/* 10. IMÁGENES */
+img.rounded-circle {
+  border: 5px solid var(--light-color);
+}
+
+/* 11. GALERÍA */
+.img-carrusel {
+  height: 350px;        /* Ajustá según el diseño */
+  object-fit: cover;
+  object-position: center;
+}
+.container .row img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+}
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* TITULOS */
+.h1-custom {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.h2-custom {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--dark-color);
+}
+
+.h3-custom {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--dark-color);
+}
+
+.h4-custom {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* PÁRRAFOS Y TEXTOS */
+
+.texto-blanco * {
+  color: var(--text-light) ;
+}
+.p-custom {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.lead-custom {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* FONDOS E IMÁGENES */
+/* Íconos verdes */
+.icon-beneficio {
+  color: #701E5E !important;
+}
+
+.btn-primary {
+  background-color: #E3562B!important;
+  border-color: #E3562B !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #E3562B !important;
+  border-color: #E3562B !important;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay-light {
+  background-color: rgba(255, 98, 189, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.bg-overlay-dark {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.img-rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* TEXTOS ADICIONALES */
+.text-uppercase-custom {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: #6c757d;
+}
+
+/* ESPACIADOS */
+.section-spacing {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.section-spacing-sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.experiencia-seccion .d-flex.flex-column > .d-flex {
+  gap: 1rem;
+}
+
+  .marcas {
+    padding: 40px 0;
+  }
+
+  .contenedor-marcas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .contenedor-marcas img {
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .contenedor-marcas img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .contenedor-marcas {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contenedor-marcas img {
+      height: 50px;
+    }
+  }
+
+      
+
+/* ============================== */
+/* MEDIA QUERIES */
+/* ============================== */
+
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .masonry__container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry__container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry__container {
+    column-count: 1;
+  }
+}
+
+.bg-plan-celeste {
+  background-color: #8A98C6; 
+}
+
+.bg-plan-lila {
+  background-color: #50D18D
+}
+
+.bg-plan-verde {
+  background-color: #B0589C
+}
+
+.card h5,
+.card p,
+.card ul,
+.card li {
+  color: var(--dark-color); /* asegura buena lectura sobre los fondos */
+}
